@@ -1,0 +1,23 @@
+.wrapper {
+    background-color: var(--theme__color--secondary);
+    &__header,
+    &__footer {
+        background-color: var(--theme__color--primary);
+    }
+}
+
+.header {
+    box-shadow: 0px 1px 5px 0px var(--theme__color--shadow);
+    border-bottom: 1px solid var(--theme__color--border);
+}
+
+.footer {
+    box-shadow: 0px 1px 10px 3px var(--theme__color--shadow);
+    border-top: 1px solid var(--theme__color--border);
+}
+
+.category__img,
+.game__flag--img {
+    border: 5px solid var(--theme__color--border);
+    box-shadow: 1px 1px 5px 0px var(--theme__color--shadow);
+}

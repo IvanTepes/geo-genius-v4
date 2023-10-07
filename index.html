@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+          crossorigin="anonymous">
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&family=Lilita+One&display=swap"
+          rel="stylesheet">
+    <!-- Title -->
+    <title>Geo Genius</title>
+    <!-- Main css -->
+    <link rel="stylesheet"
+          href="assets/scss/main.css" />
+
+</head>
+
+<body>
+    <!-- App Wrapper -->
+    <div class="container-fulid wrapper">
+        <header class="wrapper__header">
+            <!-- Header -->
+            <div class="container-fluid header">
+                <div class="row h-100 align-items-center">
+                    <div class="col-6">
+                        <h1>Geo Genius</h1>
+                    </div>
+                    <div class="col-6 header__btns">
+                        <!-- Menu -->
+                        <button class="header__menu float-end ms-3"
+                                aria-label="Main Menu">
+                            <svg viewBox="0 0 100 100">
+                                <path class="header__menu--line header__menu--line1"
+                                      d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                                <path class="header__menu--line header__menu--line2"
+                                      d="M 20,50 H 80" />
+                                <path class="header__menu--line header__menu--line3"
+                                      d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                            </svg>
+                        </button>
+                        <!-- Theme Toggle -->
+                        <button class="header__theme-toggle float-end"
+                                aria-label="Theme-toggle">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 aria-hidden="true"
+                                 fill-rule="evenodd"
+                                 viewBox="0 0 512 512">
+                                <path class="header__theme-toggle--sun"
+                                      d="m7 256 73-73V80h103l73-73 73 73h103v103l73 73-73 73v103H329l-73 73-73-73H80V329L7 256zm249-144a144 144 0 1 1 0 288 144 144 0 0 1 0-288z" />
+                                <circle cx="256"
+                                        cy="256"
+                                        r="112" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Category Section -->
+        <section class="wrapper__category visible">
+            <div class="container category h-100 ">
+                <div class="row h-100 align-content-center">
+                    <div class="col-12 category__title mt-2 mb-2">
+                        <h4 class="text-center m-1 category__title--label">CHOOSE GAME CATEGORY</h4>
+                    </div>
+                    <div class="col-12 category__flag">
+                        <div class="card category__card category__card--flag"
+                             data-category="flag">
+                            <img src="/assets/images/flag-word.webp"
+                                 class="card-img-top category__img"
+                                 alt="...">
+                            <div class="card-body category__body">
+                                <h5 class="card-title category__card-title">FLAG</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 category__capital">
+                        <div class="card category__card category__card--capital"
+                             data-category="capital">
+                            <img src="/assets/images/map2.webp"
+                                 class="card-img-top category__img"
+                                 alt="...">
+                            <div class="card-body category__body">
+                                <h5 class="card-title category__card-title">CAPITAL</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Game Instruction -->
+        <section class="wrapper__game-instruction hidden">
+            <div class="container instruction h-100">
+                <div class="row h-100">
+                    <div class="col-12 category__title mt-2 mb-2">
+                        <h4 class="text-center">GAME INSTRUCTION</h4>
+                    </div>
+                    <div class="col-12 d-flex align-items-center">
+                        <p>Your objective is to identify as many countries as possible based on the flags displayed
+                            within the next 90 seconds. Try to guess the countries corresponding to the flags shown.
+                        </p>
+                    </div>
+                    <div class="col-6 text-center mx-auto my-auto">
+                        <button type="button"
+                                class="btn btn__start-game">START GAME</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pre Game Countdown -->
+        <section class="wrapper__countdown hidden">
+            <div class="container-fluid countdown">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center countdown__label">00 : 03</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Game Section -->
+        <section class="wrapper__game hidden">
+            <div class="container game h-100 text-center">
+                <div class="row game__stats pt-2 h-10">
+                    <div class="col-4 game__time">
+                        <h6 class="game__time--label">-- : --</h6>
+                    </div>
+                    <div class="col-4 game__score">
+                        <h6 class="game__score--label">--</h6>
+                    </div>
+                    <div class="col-4 game__highscore">
+                        <h6 class="game__highscore--label">--</h6>
+                    </div>
+                </div>
+                <div class="row game__question pt-3 h-10">
+                    <h5 class="game__question--label">To which country does this flag belong?</h5>
+                </div>
+                <div class="row game__flag h-30">
+                    <div class="col-12 game__flags h-100 w-100">
+                        <img class="game__flag--img-front game__flag--img"
+                             src=""
+                             alt="">
+                    </div>
+                </div>
+                <div class="row game__buttons h-30 d-flex align-items-center">
+                    <div class="col-6 game__answer">
+                        <button class="game__btn game__answer-btn"
+                                enabled>1</button>
+                    </div>
+                    <div class="col-6 game__answer">
+                        <button class="game__btn game__answer-btn"
+                                enabled>2</button>
+                    </div>
+                    <div class="col-6 game__answer">
+                        <button class="game__btn game__answer-btn"
+                                enabled>3</button>
+                    </div>
+                    <div class="col-6 game__answer">
+                        <button class="game__btn game__answer-btn"
+                                enabled>4</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- End Game Statistics -->
+        <section class="wrapper__end-game hidden">
+            <div class="container end-game h-100">
+                <div class="row h-100">
+                    <div class="col-12 category__title mt-2 mb-2">
+                        <h4 class="text-center">GAME STATISTIC</h4>
+                    </div>
+                    <div class="col-12 text-centar">
+                        <h4 class="end-game__score--label-text text-center">SCORE</h4>
+                        <h1 class="end-game__score--label-value text-center">--</h1>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center align-items-center text-center">
+                        <table class="table end-game__statistic-table">
+                            <tbody>
+                                <tr>
+                                    <td class="w-50">QUESTIONS</td>
+                                    <td class="end-game__question-opened">--</td>
+                                </tr>
+                                <tr>
+                                    <td>CORRECT</td>
+                                    <td class="end-game__question-correct">--</td>
+                                </tr>
+                                <tr>
+                                    <td>HIGHSCORE</td>
+                                    <td class="end-game__highscore">--</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="wrapper__footer">
+            <div class="container-fluid footer h-100">
+                <div class="row h-100 w-100 align-items-center">
+                    <div class="col footer__reset-btn">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg version="1.1"
+                             class="footer__reset-btn--svg hidden float-start "
+                             id="Layer_1"
+                             xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink"
+                             x="0px"
+                             y="0px"
+                             viewBox="0 0 512 512"
+                             style="enable-background:new 0 0 512 512;"
+                             xml:space="preserve">
+                            <path
+                                  d="M119.2,266.1c0,14.2-11.5,25.7-25.6,25.7S68,280.3,68,266.1c0-104.2,84.2-188.6,187.9-188.6c44.4,0,87.4,15.9,121.3,44.7
+                                v-20c0-14.2,11.5-25.7,25.6-25.7c14.1,0,25.6,11.5,25.6,25.7v81.1c0,14.1-11.4,25.6-25.5,25.6l-77.7,7.3c-14,1.3-26.4-9.1-27.7-23.2
+                                c-1.3-14.1,9.1-26.5,23.1-27.8l25.5-2.3c-56.9-50-143.4-44.1-193.2,13C131.3,200.8,119.2,232.9,119.2,266.1z M191.7,328.8
+                                c14.1-1.3,26.5,9.2,27.8,23.3c1.3,14.1-9.1,26.6-23.2,27.9l-32.1,2.9c56,50.9,142.5,46.7,193.2-9.6c22.9-25.3,35.5-58.3,35.4-92.5
+                                c0-14.2,11.5-25.7,25.6-25.7c14.1,0,25.6,11.5,25.6,25.7c0,104.2-84.1,188.7-187.8,188.7c-42.6,0-83.9-14.5-117.1-41.1v13.4
+                                c0,14.2-11.5,25.7-25.6,25.7S87.9,456,87.9,441.8v-80.1l0,0c-0.1-13.3,10-24.4,23.2-25.6L191.7,328.8L191.7,328.8z" />
+                        </svg>
+                    </div>
+                    <div class="col footer__linkedin">
+                        <svg class="footer__linkedin--svg float-end "
+                             xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 32 32">
+                            <g id="Layer_2"
+                               data-name="Layer 2">
+                                <g id="Layer_1-2"
+                                   data-name="Layer 1">
+                                    <path d="M25.33,0H6.67A6.67,6.67,0,0,0,0,6.67V25.33A6.67,6.67,0,0,0,6.67,32H25.33A6.67,6.67,
+                                0,0,0,32,25.33V6.67A6.67,6.67,0,0,0,25.33,0ZM10.67,25.33h-4V10.67h4ZM8.67,9A2.36,2.36,0,1,1,11,
+                                6.62,2.35,2.35,0,0,1,8.67,9Zm18,16.35h-4V17.86c0-4.49-5.34-4.15-5.34,
+                                0v7.47h-4V10.67h4V13c1.86-3.45,9.34-3.7,9.34,3.3Z" />
+                                </g>
+                        </svg>
+                    </div>
+                    <div class="col footer__github">
+                        <svg class="footer__github--svg float-start "
+                             xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 32 32">
+                            <g id="Layer_2"
+                               data-name="Layer 2">
+                                <g id="Layer_1-2"
+                                   data-name="Layer 1">
+                                    <path
+                                          d="M28.57,0H3.43A3.44,3.44,0,0,0,0,3.43V28.57A3.44,3.44,0,0,0,3.43,32H28.57A3.44,3.44,0,0,0,32,28.57V3.43A3.44,
+                                    3.44,0,0,0,28.57,0ZM19.81,27.41c-.6.1-.82-.27-.82-.57s0-2.36,0-3.95a2.77,2.77,0,0,0-.81-2.2c2.65-.29,5.43-.65,5.43-5.22a3.64,
+                                    3.64,0,0,0-1.22-2.78,4.49,4.49,0,0,0-.12-3.22c-1-.31-3.27,1.28-3.27,1.28a11.23,11.23,0,0,0-5.94,0S10.8,9.16,9.81,
+                                    9.47a4.44,4.44,0,0,0-.12,3.22,3.56,3.56,0,0,0-1.12,2.78c0,4.54,2.67,4.93,5.31,5.22a2.64,2.64,0,0,0-.76,
+                                    1.6,2.52,2.52,0,0,1-3.45-1,2.48,2.48,0,0,0-1.82-1.22c-1.16,0-.08.73-.08.73.77.36,1.32,1.73,1.32,1.73.69,
+                                    2.12,4,1.41,4,1.41,0,1,0,2.6,0,2.9s-.22.67-.82.57a11.86,11.86,0,0,1-8-11.31A11.34,11.34,0,0,1,15.84,4.56,
+                                    11.59,11.59,0,0,1,27.71,16.1,11.74,11.74,0,0,1,19.81,27.41ZM12.8,23c-.14,0-.26,0-.28-.12s.08-.2.22-.23.26,
+                                    0,.27.14-.07.18-.21.21ZM12.12,23c0,.09-.11.17-.25.17s-.26-.06-.26-.17.1-.17.25-.17S12.12,22.87,12.12,23Zm-1-.08a.22.22,0,0,
+                                    1-.29.09c-.14,0-.23-.13-.2-.23s.17-.13.29-.1.24.15.2.24Zm-.88-.39c-.06.08-.2.07-.3,0s-.14-.23-.07-.29.2-.07.31,0S10.33,22.46,
+                                    10.26,22.51Zm-.65-.65c-.06.05-.18,0-.26-.1s-.08-.23,0-.28.2,0,.26.09S9.69,21.81,9.61,21.86Zm-.46-.69c-.06.07-.17,0-.25,0s-.09-.2,
+                                    0-.25.17,0,.25,0S9.21,21.12,9.15,21.17Zm-.48-.53c0,.07-.12.08-.2,0a.16.16,0,0,1-.11-.18.15.15,0,0,1,.2,0C8.66,20.51,8.7,20.59,8.67,20.64Z" />
+                                </g>
+                        </svg>
+                    </div>
+                    <div class="col footer__back-btn">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg version="1.1"
+                             class="footer__back-btn--svg float-end hidden"
+                             id="Layer_1"
+                             xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink"
+                             x="0px"
+                             y="0px"
+                             viewBox="0 0 512 512"
+                             style="enable-background:new 0 0 512 512;"
+                             xml:space="preserve">
+                            <g id="XMLID_1_">
+                                <path id="XMLID_3_"
+                                      d="M198.4,272.1l193.5-151.2c14-10.9,14-29.1,0-40.7c-14-10.9-37.2-10.9-52.1,0L120.2,251.8
+                                        c-14,10.9-14,28.4-0.9,39.2l220.5
+                                        ,173c7.4,5.8,16.7,8,26.1,8c9.3,0,18.6-2.9,
+                                        26.1-8c14-10.9,14-29.1,0-40.7L198.4,272.1z" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="row position-absolute  bottom-1 ">
+                    <div class="col">
+                        <button class="btn__next-question footer__next-question--btn hidden">NEXT QUESTION</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Reset Game Modal -->
+    <div class="reset-modal modal fade"
+         id="resetGameModal"
+         tabindex="-1"
+         aria-labelledby="resetGameLabel"
+         aria-hidden="true">
+        <div class="reset-modal__dialog modal-dialog modal-dialog-centered">
+            <div class="reset-modal__content modal-content">
+                <div class="reset-modal__header modal-header">
+                    <h1 class="reset-modal__title modal-title fs-5 mx-auto"
+                        id="resetGameLabel">RESET GAME</h1>
+                </div>
+                <div class="reset-modal__body modal-body">
+                    <h5 class="text-center">Are you sure you want to reset the game?</h5>
+                </div>
+                <div class="reset-modal__footer modal-footer d-flex justify-content-around">
+                    <button type="button"
+                            class="reset-modal__btn-cancel btn btn-secondary"
+                            data-bs-dismiss="modal">CANCEL</button>
+                    <button type="button"
+                            data-bs-dismiss="modal"
+                            class="reset-modal__btn-reset btn btn-primary">RESET</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Back Game Modal -->
+    <div class="restart-modal modal fade"
+         id="restartGameModal"
+         tabindex="-1"
+         aria-labelledby="restartGameLabel"
+         aria-hidden="true">
+        <div class="restart-modal__dialog modal-dialog modal-dialog-centered">
+            <div class="restart-modal__content modal-content">
+                <div class="restart-modal__header modal-header">
+                    <h1 class="restart-modal__title modal-title fs-5 mx-auto"
+                        id="restartGameLabel">RESTART GAME</h1>
+                </div>
+                <div class="restart-modal__body modal-body">
+                    <h5 class="text-center">Are you sure you want to restart the game?</h5>
+                </div>
+                <div class="restart-modal__footer modal-footer d-flex justify-content-around">
+                    <button type="button"
+                            class="restart-modal__btn-cancel btn btn-secondary"
+                            data-bs-dismiss="modal">CANCEL</button>
+                    <button type="button"
+                            data-bs-dismiss="modal"
+                            class="restart-modal__btn-restart btn btn-primary">RESTART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+    <!-- Script Loader -->
+    <script src="assets/js/game-loader.js"></script>
+</body>
+
+</html>

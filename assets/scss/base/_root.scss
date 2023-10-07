@@ -1,0 +1,28 @@
+/* ! ROOT */
+// ! Root
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0 !important;
+}
+
+h1 {
+    font-size: calc(1.375rem + 1.3vw);
+}
+
+.wrapper {
+    height: 100svh;
+    background-color: var(--theme__color--primary);
+    color: var(--theme__color--text);
+}
+

@@ -1,0 +1,23 @@
+//! LIGHT THEME
+$theme-light__bg--primary: #e1e1e2;
+$theme-light__bg--secondary: #f0f2f5;
+$theme-light__bg--border: #ffffff;
+$theme-light__bg--shadow: #afb2b7;
+$theme-light__text-color: #2f3541;
+$theme-light__success: #44cc77;
+$theme-light__error: #ee2c4a;
+$theme-light__warning: #ffbb00;
+$theme-light__selected: $theme-light__text-color;
+$theme-light__svg-fill: $theme-light__text-color;
+
+//! DARK THEME
+$theme-dark__bg--primary: #121212;
+$theme-dark__bg--secondary: #222222;
+$theme-dark__bg--border: #434141;
+$theme-dark__bg--shadow: $theme-dark__bg--primary;
+$theme-dark__text-color: #e0e0e0;
+$theme-dark__success: #309053;
+$theme-dark__error: #a82830;
+$theme-dark__warning: #b28400;
+$theme-dark__selected: $theme-dark__bg--primary;
+$theme-dark__svg-fill: $theme-light__bg--primary;

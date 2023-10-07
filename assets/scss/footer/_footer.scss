@@ -1,0 +1,13 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        height: 2.3rem;
+        width: 2.3rem;
+        padding: 0.3rem;
+        fill: var(--theme__color--svg-fill);
+        cursor: pointer;
+    }
+}

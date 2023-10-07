@@ -1,0 +1,33 @@
+/* ! HELPERS */
+// ! Helpers
+
+/* Helper class to hide element */
+.hidden {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+/* Helper class to display element */
+.visible {
+    max-height: calc(100svh - 10svh);
+    opacity: 1;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+}
+
+.disabled {
+    background-color: -internal-light-dark(rgba(239, 239, 239, 0.3), rgba(19, 1, 1, 0.3));
+    color: -internal-light-dark(rgba(16, 16, 16, 0.3), rgba(255, 255, 255, 0.3));
+    border-color: -internal-light-dark(rgba(118, 118, 118, 0.3), rgba(195, 195, 195, 0.3));
+}
+
+// Height sizing
+.h-10 {
+    height: 10% !important;
+}
+
+.h-30 {
+    height: 30% !important;
+}

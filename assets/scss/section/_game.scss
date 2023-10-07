@@ -1,0 +1,49 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__time::before {
+        content: 'TIME';
+    }
+    &__score::before {
+        content: 'SCORE';
+    }
+    &__highscore::before {
+        content: 'HIGHSCORE';
+    }
+
+    &__flag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__flags {
+        position: relative;
+        width: max-content;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+
+    &__flag--img {
+        border-radius: 10px;
+        // border: 5px solid var(--theme__color--border);
+        @media (orientation: portrait) {
+            width: 55%;
+        }
+
+        // Landscape mode
+        @media (orientation: landscape) {
+            width: 15%;
+        }
+    }
+
+    &__flag--img-front {
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+        pointer-events: none;
+    }
+}

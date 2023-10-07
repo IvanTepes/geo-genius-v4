@@ -1,0 +1,35 @@
+/* ! MEDIA QUERIES */
+// ! Media Queries
+
+// Portrait mode
+@media (orientation: portrait) {
+    .wrapper__header {
+        height: 7svh;
+        display: flex;
+    }
+
+    .category__title {
+        margin-bottom: 3rem !important;
+    }
+}
+
+// Landscape mode
+@media (orientation: landscape) {
+    .wrapper__header {
+        height: 14svh;
+        display: flex;
+    }
+
+    .category__flag,
+    .category__capital {
+        width: 50% !important;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .wrapper__header {
+        height: 10svh;
+        display: flex;
+    }
+}

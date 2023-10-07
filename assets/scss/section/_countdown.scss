@@ -1,0 +1,29 @@
+.countdown {
+    height: 100%;
+
+    // background-color: var(--theme__color--border);
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // background: rgba(255, 255, 255, 0.25);
+    // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    // backdrop-filter: blur(4px);
+    // -webkit-backdrop-filter: blur(4px);
+    // border-radius: 10px;
+    // border: 1px solid rgba(255, 255, 255, 0.18);
+    &__label {
+        font-size: calc(10.375rem + 1.3vw);
+        color: var(--theme__color--text);
+        border-radius: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        background-color: var(--theme__color--primary);
+        border: 5px solid var(--theme__color--border);
+        box-shadow: 1px 1px 5px 0px var(--theme__color--shadow);
+    }
+}

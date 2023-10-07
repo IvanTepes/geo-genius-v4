@@ -1,0 +1,23 @@
+// BASE
+@import 'base/root', 'base/media-queries', 'base/typography', 'base/colors', 'base/helpers', 'base/app-wrapper';
+
+// ANIMATIONS
+@import 'animations/scale';
+
+// HEADER
+@import 'header/main-menu', 'header/theme-toggle';
+
+// FOOTER
+@import 'footer/footer';
+
+// THEMES
+@import 'themes/dark', 'themes/light', 'themes/theme';
+
+// SECTION
+@import 'section/category', 'section/countdown', 'section/game', 'section/end-game';
+
+// BUTTONS
+@import 'buttons/start-game-btn', 'buttons/answer-btns', 'buttons/next-question';
+
+// MODAL
+@import 'modal/modal';

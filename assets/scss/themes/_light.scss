@@ -1,0 +1,17 @@
+/* -------------- */
+/* ! LIGHT THEME */
+/* -------------- */
+
+html[data-theme='light'] {
+    --theme__color--primary: #{$theme-light__bg--primary};
+    --theme__color--secondary: #{$theme-light__bg--secondary};
+    --theme__color--border: #{$theme-light__bg--border};
+    --theme__color--shadow: #{$theme-light__bg--shadow};
+    --theme__color--text: #{$theme-light__text-color};
+    --theme__color--success: #{$theme-light__success};
+    --theme__color--error: #{$theme-light__error};
+    --theme__color--warning: #{$theme-light__warning};
+    --theme__color--selected: #{$theme-light__selected};
+    --theme__color--svg-fill: #{$theme-light__svg-fill};
+    --theme__color--svg-background: #{$theme-light__bg--primary};
+}

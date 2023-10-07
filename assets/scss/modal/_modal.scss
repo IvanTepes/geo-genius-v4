@@ -1,0 +1,41 @@
+.reset-modal,
+.restart-modal {
+    color: var(--theme__color--text);
+    &__dialog {
+    }
+
+    &__content {
+        border: 1px solid var(--theme__color--border);
+    }
+
+    &__header {
+        background-color: var(--theme__color--primary);
+        border-bottom-color: var(--theme__color--border);
+    }
+
+    &__title {
+    }
+
+    &__body {
+        background-color: var(--theme__color--secondary);
+    }
+
+    &__footer {
+        background-color: var(--theme__color--primary);
+        border-top-color: var(--theme__color--border);
+    }
+    &__btn-reset {
+        background-color: var(--theme__color--error);
+        border: 2.5px solid var(--theme__color--border);
+        color: var(--theme__color--primary);
+    }
+
+    &__btn-cancel {
+        background-color: var(--theme__color--warning);
+        border: 2.5px solid var(--theme__color--border);
+    }
+}
+
+.modal-backdrop {
+    opacity: 0.9 !important;
+}

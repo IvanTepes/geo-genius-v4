@@ -1,0 +1,29 @@
+.game {
+    &__answer-btn {
+        width: 10rem;
+        height: 2rem;
+        background: var(--theme__color--primary);
+        color: var(--theme__color--text);
+        font-weight: bold;
+        letter-spacing: 1px;
+        border: 2.5px solid var(--theme__color--border);
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px 0px var(--theme__color--shadow);
+    }
+
+    &__btn:enabled:hover {
+        color: var(--theme__color--selected);
+        background-color: var(--theme__color--warning);
+        transition: all 0.5s ease;
+    }
+
+    &__answer--correct {
+        background-color: var(--theme__color--success);
+        transition: all 0.5s ease;
+    }
+
+    &__answer--incorrect {
+        background-color: var(--theme__color--error);
+        transition: all 0.5s ease;
+    }
+}

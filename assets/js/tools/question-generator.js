@@ -8,12 +8,15 @@ import { updateGameData } from './update-game-data.js';
 // Define a function to generate a question
 export function generateQuestion() {
     let usedFlags = gameData.usedFlags;
-    // Filter out flags that have already been used
-    let availableFlags = gameData.countries.filter(country => !usedFlags.includes(country.name));
+    const countries = gameData.countries;
 
+    // Filter out flags that have already been used
+    let availableFlags = countries.filter(country => !usedFlags.includes(country.name));
+
+    // If all flags have been used, reset the usedFlags array
     if (availableFlags.length === 0) {
-        // If all flags have been used, reset the usedFlags array
-        availableFlags = gameData.countries;
+        availableFlags = countries;
+        gameData.usedFlags = [];
     }
 
     // Choose a random flag from the availableFlags
@@ -29,7 +32,7 @@ export function generateQuestion() {
     setFlagImage(correctCountry.flagImage);
 
     // Generate three wrong answers to accompany the correct answer
-    const wrongAnswers = generateWrongAnswers(correctCountry, gameData.countries);
+    const wrongAnswers = generateWrongAnswers(correctCountry, countries);
 
     // Combine the correct answer and the wrong answers into one array
     const allAnswers = [correctCountry, ...wrongAnswers];
@@ -41,12 +44,6 @@ export function generateQuestion() {
     setAnswerButtonsText(shuffledAnswers);
 }
 
-// Define a function to choose a random country from the array
-function chooseRandomCountry() {
-    const countriesNewData = gameData.countries;
-    return countriesNewData[Math.floor(Math.random() * countriesNewData.length)];
-}
-
 // Define a function to choose a random flag from the available flags
 function chooseRandomFlag(availableFlags) {
     return availableFlags[Math.floor(Math.random() * availableFlags.length)];
@@ -54,13 +51,15 @@ function chooseRandomFlag(availableFlags) {
 
 // Define a function to generate three wrong answers for a given country
 function generateWrongAnswers(correctCountry, countries) {
-    const remainingCountries = countries.filter(country => country.name !== correctCountry.name);
     const wrongAnswers = [];
 
     while (wrongAnswers.length < 3) {
-        const randomCountry = chooseRandomCountry(remainingCountries);
+        const randomCountry = chooseRandomFlag(countries);
 
-        if (!wrongAnswers.some(answer => answer.name === randomCountry.name)) {
+        if (
+            randomCountry.name !== correctCountry.name &&
+            !wrongAnswers.some(answer => answer.name === randomCountry.name)
+        ) {
             wrongAnswers.push(randomCountry);
         }
     }

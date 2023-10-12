@@ -22,19 +22,71 @@ p {
     letter-spacing: 1.5px;
 }
 
-.game__answer-btn--short-font {
-    font-size: 0.8rem !important;
-    padding: 0.2rem !important;
-}
-.game__answer-btn--medium-font {
-    font-size: 0.8rem !important;
-    padding: 0.2rem !important;
-}
-.game__answer-btn--long-font {
-    font-size: 0.7rem !important;
+.font__extra-large {
+    font-size: 0.95rem !important;
+
+    @media (max-width: 480px) {
+        font-size: 0.55rem !important;
+    }
+
+    @media (min-width: 481px) {
+        font-size: 0.75rem !important;
+    }
+
+    @media (min-width: 600px) {
+        font-size: 0.75rem !important;
+    }
+
+    @media (min-width: 801px) {
+        font-size: 1rem !important;
+    }
 }
 
-.game__answer-btn--extra-long-font {
+.font__large {
     font-size: 0.75rem !important;
-    padding: 0.2rem !important;
+
+    @media (max-width: 480px) {
+        font-size: 0.5rem !important;
+    }
+    @media (min-width: 481px) {
+        font-size: 0.65rem !important;
+    }
+    @media (min-width: 600px) {
+        font-size: 0.65rem !important;
+    }
+    @media (min-width: 801px) {
+        font-size: 0.8rem !important;
+    }
+}
+
+.font__medium {
+    font-size: 0.65rem !important;
+
+    @media (max-width: 480px) {
+        font-size: 0.5rem !important;
+    }
+    @media (min-width: 481px) {
+        font-size: 0.5rem !important;
+    }
+    @media (min-width: 600px) {
+        font-size: 0.6rem !important;
+    }
+
+    @media (min-width: 801px) {
+        font-size: 0.65rem !important;
+    }
+}
+
+.font__small {
+    font-size: 0.6rem !important;
+
+    @media (max-width: 480px) {
+        font-size: 0.5rem !important;
+    }
+    @media (min-width: 481px) {
+        font-size: 0.5rem !important;
+    }
+    @media (min-width: 801px) {
+        font-size: 0.6rem !important;
+    }
 }

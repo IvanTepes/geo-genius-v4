@@ -2,21 +2,22 @@
 // ! Media Queries
 
 // Portrait mode
-@media (orientation: portrait) {
-    .wrapper__header {
-        height: 7svh;
-        display: flex;
-    }
 
-    .category__title {
-        margin-bottom: 3rem !important;
-    }
-}
+// @media (orientation: portrait) {
+//     .wrapper__header {
+//         height: 7svh;
+//         display: flex;
+//     }
 
-// Landscape mode
+//     .category__title {
+//         margin-bottom: 3rem !important;
+//     }
+// }
+
+// // Landscape mode
 @media (orientation: landscape) {
     .wrapper__header {
-        height: 14svh;
+        // height: 14svh;
         display: flex;
     }
 
@@ -26,10 +27,587 @@
     }
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@media (max-width: 320px) {
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+
+    .wrapper__header {
+        height: 7svh;
+        display: flex;
+    }
+
+    .wrapper__title {
+        font-size: 1.3rem;
+    }
+
+    .header__btns {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .header__menu {
+        display: flex;
+    }
+
+    .header__theme-toggle svg {
+        padding: 0.2rem !important;
+    }
+
+    .svg-icon {
+        height: 1.5rem !important;
+        width: 1.5rem !important;
+    }
+
+    .category__title {
+        margin-bottom: 2rem !important;
+    }
+
+    .category__title--label,
+    .category__card-title,
+    .game__question--label {
+        font-size: 1rem;
+    }
+
+    .instruction__title {
+        font-size: 1rem;
+    }
+
+    .instruction__label {
+        font-size: 0.9rem;
+    }
+
+    .countdown__label {
+        font-size: 3rem !important;
+    }
+
+    .game__time--label,
+    .game__score--label,
+    .game__highscore--label,
+    .game__time::before,
+    .game__score::before,
+    .game__highscore::before {
+        font-size: 0.7rem;
+    }
+
+    .game__answer-btn {
+        width: 8rem !important;
+    }
+
+    .btn__next-question {
+        font-size: 0.9rem;
+        height: 1.5rem !important;
+        width: 9rem !important;
+    }
+
+    .end-game__statistic-title {
+        font-size: 1rem;
+    }
+
+    .end-game__score--label-text {
+        font-size: 1rem;
+    }
+    .end-game__score--label-value {
+        font-size: 3rem;
+    }
+
+    .end-game__statistic-table {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 321px) {
+    /* smartphones, Android phones, landscape iPhone */
+
+    .wrapper__header {
+        height: 8svh;
+        display: flex;
+    }
+
+    .wrapper__title {
+        font-size: 1.4rem;
+    }
+
+    .header__btns {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .header__menu {
+        display: flex;
+    }
+
+    .header__theme-toggle svg {
+        padding: 0.2rem !important;
+    }
+
+    .svg-icon {
+        height: 1.7rem !important;
+        width: 1.7rem !important;
+    }
+
+    .category__title {
+        margin-bottom: 2rem !important;
+    }
+
+    .category__title--label,
+    .category__card-title,
+    .game__question--label {
+        font-size: 1rem;
+    }
+
+    .card-img-top {
+        width: 75%;
+    }
+
+    .category__card {
+        display: flex;
+        align-items: center;
+    }
+
+    .instruction__title {
+        font-size: 1rem;
+    }
+
+    .instruction__label {
+        font-size: 0.9rem;
+    }
+
+    .countdown__label {
+        font-size: 3rem !important;
+    }
+
+    .game__time--label,
+    .game__score--label,
+    .game__highscore--label,
+    .game__time::before,
+    .game__score::before,
+    .game__highscore::before {
+        font-size: 0.8rem;
+    }
+
+    .game__answer-btn {
+        width: 8rem;
+    }
+
+    .game__flag--img {
+        width: 40% !important;
+    }
+
+    .btn__next-question {
+        font-size: 0.9rem;
+        height: 1.5rem;
+        width: 9rem;
+    }
+
+    .end-game__statistic-title {
+        font-size: 1rem;
+    }
+
+    .end-game__score--label-text {
+        font-size: 1rem;
+    }
+    .end-game__score--label-value {
+        font-size: 3rem;
+    }
+
+    .end-game__statistic-table {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 321px) and (orientation: landscape) {
+    .wrapper__header {
+        height: 11svh;
+        display: flex;
+    }
+
+    .wrapper__title {
+        font-size: 1.4rem;
+    }
+
+    .category__title {
+        margin: 0px !important;
+    }
+
+    .card-img-top {
+        width: 100%;
+    }
+
+    .category__flag,
+    .category__capital {
+        display: flex;
+        align-items: flex-end !important;
+    }
+
+    .game__flag--img {
+        width: 20% !important;
+    }
+
+    .game__answer-btn {
+        height: 1.5rem;
+        border: 1.5px solid var(--theme__color--border);
+    }
+}
+
+@media (min-width: 480px) {
+    .wrapper__header {
+        height: 9svh;
+        display: flex;
+    }
+
+    .wrapper__title {
+        font-size: 1.9rem;
+    }
+
+    .header__btns {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .header__menu {
+        display: flex;
+    }
+
+    // .header__theme-toggle svg {
+    //     padding: 0.2rem !important;
+    // }
+
+    .svg-icon {
+        height: 2rem !important;
+        width: 2rem !important;
+    }
+
+    // .category__title {
+    //     margin-bottom: 2rem !important;
+    // }
+
+    .category__title--label,
+    .category__card-title,
+    .game__question--label,
+    .instruction__title {
+        font-size: 1.1rem;
+    }
+
+    .card-img-top {
+        width: 60%;
+    }
+
+    // .category__card {
+    //     display: flex;
+    //     align-items: center;
+    // }
+
+    // .instruction__label {
+    //     font-size: 1rem;
+    // }
+
+    // .countdown__label {
+    //     font-size: 3rem !important;
+    // }
+
+    // .game__time--label,
+    // .game__score--label,
+    // .game__highscore--label,
+    // .game__time::before,
+    // .game__score::before,
+    // .game__highscore::before {
+    //     font-size: 0.8rem;
+    // }
+
+    // .game__answer-btn {
+    //     width: 8rem !important;
+    // }
+
+    // .game__flag--img {
+    //     width: 40% !important;
+    // }
+
+    // .btn__next-question {
+    //     font-size: 0.9rem;
+    //     height: 1.5rem !important;
+    //     width: 9rem !important;
+    // }
+
+    // .end-game__statistic-title {
+    //     font-size: 1rem;
+    // }
+
+    // .end-game__score--label-text {
+    //     font-size: 1rem;
+    // }
+    // .end-game__score--label-value {
+    //     font-size: 3rem;
+    // }
+
+    // .end-game__statistic-table {
+    //     font-size: 0.7rem;
+    // }
+}
+
+@media (min-width: 480px) and (orientation: landscape) {
+    .wrapper__header {
+        height: 13svh;
+        display: flex;
+    }
+
+    .wrapper__title {
+        font-size: 1.4rem;
+    }
+
+    .category__title {
+        margin: 0px !important;
+    }
+
+    .card-img-top {
+        width: 100%;
+    }
+
+    .category__flag,
+    .category__capital {
+        display: flex;
+        align-items: center !important;
+    }
+
+    .game__flag--img {
+        width: 20% !important;
+    }
+
+    .game__answer-btn {
+        height: 1.5rem;
+        border: 1.5px solid var(--theme__color--border) !important;
+    }
+}
+
+// @media (min-width: 600px) {
+//     .card-img-top {
+//         width: 50%;
+//     }
+// }
+
+@media (min-width: 600px) {
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+
     .wrapper__header {
         height: 10svh;
         display: flex;
+    }
+
+    .wrapper__title {
+        font-size: 2rem;
+    }
+
+    .header__btns {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .header__menu {
+        display: flex;
+    }
+
+    // .header__theme-toggle svg {
+    //     padding: 0.2rem !important;
+    // }
+
+    .svg-icon {
+        height: 2.2rem !important;
+        width: 2.2rem !important;
+    }
+
+    // .category__title {
+    //     margin-bottom: 2rem !important;
+    // }
+
+    .category__title--label,
+    .category__card-title,
+    .game__question--label,
+    .instruction__title {
+        font-size: 1.3rem;
+    }
+
+    .card-img-top {
+        width: 60%;
+    }
+
+    // .category__card {
+    //     display: flex;
+    //     align-items: center;
+    // }
+
+    .instruction__label {
+        font-size: 1rem;
+    }
+
+    .countdown__label {
+        font-size: 3.3rem !important;
+    }
+
+    .game__time--label,
+    .game__score--label,
+    .game__highscore--label,
+    .game__time::before,
+    .game__score::before,
+    .game__highscore::before {
+        font-size: 1rem;
+    }
+
+    .game__answer-btn {
+        width: 9.5rem;
+    }
+
+    // .game__flag--img {
+    //     width: 40% !important;
+    // }
+
+    .btn__next-question {
+        font-size: 1rem;
+        height: 2rem;
+        width: 10rem;
+    }
+
+    .end-game__statistic-title {
+        font-size: 1.3rem;
+    }
+
+    .end-game__score--label-text {
+        font-size: 1.2rem;
+    }
+    .end-game__score--label-value {
+        font-size: 3.2rem;
+    }
+
+    .end-game__statistic-table {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 600px) and (orientation: landscape) {
+    .wrapper__header {
+        height: 13svh;
+        display: flex;
+    }
+
+    .wrapper__title {
+        font-size: 1.4rem;
+    }
+
+    .category__title {
+        margin: 0px !important;
+    }
+
+    .card-img-top {
+        width: 100%;
+    }
+
+    .category__flag,
+    .category__capital {
+        display: flex;
+        align-items: center !important;
+    }
+
+    .game__flag--img {
+        width: 20% !important;
+    }
+
+    .game__answer-btn {
+        height: 1.5rem;
+        border: 1.5px solid var(--theme__color--border) !important;
+    }
+}
+
+@media (min-width: 801px) {
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+
+    .wrapper__header {
+        height: 11svh;
+        display: flex;
+    }
+
+    .wrapper__title {
+        font-size: 2.3rem;
+    }
+
+    .header__btns {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .header__menu {
+        display: flex;
+    }
+
+    // .header__theme-toggle svg {
+    //     padding: 0.2rem !important;
+    // }
+
+    .svg-icon {
+        height: 2.5rem !important;
+        width: 2.5rem !important;
+    }
+
+    // .category__title {
+    //     margin-bottom: 2rem !important;
+    // }
+
+    .category__title--label,
+    .category__card-title,
+    .game__question--label,
+    .instruction__title {
+        font-size: 1.7rem;
+    }
+
+    .card-img-top {
+        width: 80%;
+    }
+
+    // .category__card {
+    //     display: flex;
+    //     align-items: center;
+    // }
+
+    .instruction__label {
+        font-size: 1.3rem;
+    }
+
+    .countdown__label {
+        font-size: 5.5rem !important;
+    }
+
+    .game__time--label,
+    .game__score--label,
+    .game__highscore--label,
+    .game__time::before,
+    .game__score::before,
+    .game__highscore::before {
+        font-size: 1.4rem;
+    }
+
+    .game__answer-btn {
+        width: 10rem;
+        height: 2rem;
+    }
+
+    // .game__flag--img {
+    //     width: 40% !important;
+    // }
+
+    .btn__next-question {
+        font-size: 1.1rem;
+        height: 2.2rem;
+        width: 10rem;
+    }
+
+    .end-game__statistic-title {
+        font-size: 1.7rem;
+    }
+
+    .end-game__score--label-text {
+        font-size: 1.5rem;
+    }
+    .end-game__score--label-value {
+        font-size: 3.7rem;
+    }
+
+    .end-game__statistic-table {
+        font-size: 1.3rem;
     }
 }

@@ -43,6 +43,7 @@ const countryShortName = {
     'United States of America': 'United States',
     'Venezuela (Bolivarian Republic of)': 'Venezuela',
     'Falkland Islands (Malvinas)': 'Falkland Islands',
+    'Saint Vincent and the Grenadines': 'Saint Vincent / Grenadines',
 };
 
 // Define key for local storage

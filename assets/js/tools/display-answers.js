@@ -9,15 +9,16 @@ export function setAnswerButtonsText(answers) {
     // Define a function to calculate the CSS class based on the answer text length
     function getAnswerClass(answerText) {
         const answerCountryLength = answerText.length;
+        console.log(answerText, answerText.length);
 
-        if (answerCountryLength <= 11) {
-            return 'game__answer-btn--short-font';
-        } else if (answerCountryLength <= 15) {
-            return 'game__answer-btn--medium-font';
+        if (answerCountryLength <= 15) {
+            return 'font__extra-large';
         } else if (answerCountryLength <= 18) {
-            return 'game__answer-btn--long-font';
+            return 'font__large';
+        } else if (answerCountryLength <= 22) {
+            return 'font__medium';
         } else {
-            return 'game__answer-btn--extra-long-font';
+            return 'font__small';
         }
     }
 

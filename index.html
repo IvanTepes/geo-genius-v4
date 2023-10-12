@@ -34,13 +34,14 @@
             <div class="container-fluid header">
                 <div class="row h-100 align-items-center">
                     <div class="col-6">
-                        <h1>Geo Genius</h1>
+                        <h1 class="wrapper__title">Geo Genius</h1>
                     </div>
                     <div class="col-6 header__btns">
                         <!-- Menu -->
                         <button class="header__menu float-end ms-3"
                                 aria-label="Main Menu">
-                            <svg viewBox="0 0 100 100">
+                            <svg class="svg-icon"
+                                 viewBox="0 0 100 100">
                                 <path class="header__menu--line header__menu--line1"
                                       d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
                                 <path class="header__menu--line header__menu--line2"
@@ -52,7 +53,8 @@
                         <!-- Theme Toggle -->
                         <button class="header__theme-toggle float-end"
                                 aria-label="Theme-toggle">
-                            <svg xmlns="http://www.w3.org/2000/svg"
+                            <svg class="svg-icon"
+                                 xmlns="http://www.w3.org/2000/svg"
                                  aria-hidden="true"
                                  fill-rule="evenodd"
                                  viewBox="0 0 512 512">
@@ -104,10 +106,11 @@
             <div class="container instruction h-100">
                 <div class="row h-100">
                     <div class="col-12 category__title mt-2 mb-2">
-                        <h4 class="text-center">GAME INSTRUCTION</h4>
+                        <h4 class="text-center instruction__title">GAME INSTRUCTION</h4>
                     </div>
                     <div class="col-12 d-flex align-items-center">
-                        <p>Your objective is to identify as many countries as possible based on the flags displayed
+                        <p class="instruction__label">Your objective is to identify as many countries as possible based
+                            on the flags displayed
                             within the next 90 seconds. Try to guess the countries corresponding to the flags shown.
                         </p>
                     </div>
@@ -178,7 +181,7 @@
             <div class="container end-game h-100">
                 <div class="row h-100">
                     <div class="col-12 category__title mt-2 mb-2">
-                        <h4 class="text-center">GAME STATISTIC</h4>
+                        <h4 class="text-center end-game__statistic-title">GAME STATISTIC</h4>
                     </div>
                     <div class="col-12 text-centar">
                         <h4 class="end-game__score--label-text text-center">SCORE</h4>
@@ -212,7 +215,7 @@
                     <div class="col footer__reset-btn">
                         <?xml version="1.0" encoding="utf-8"?>
                         <svg version="1.1"
-                             class="footer__reset-btn--svg hidden float-start "
+                             class="footer__reset-btn--svg hidden float-start svg-icon"
                              id="Layer_1"
                              xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -231,7 +234,7 @@
                         </svg>
                     </div>
                     <div class="col footer__linkedin">
-                        <svg class="footer__linkedin--svg float-end "
+                        <svg class="footer__linkedin--svg float-end svg-icon"
                              xmlns="http://www.w3.org/2000/svg"
                              viewBox="0 0 32 32">
                             <g id="Layer_2"
@@ -246,7 +249,7 @@
                         </svg>
                     </div>
                     <div class="col footer__github">
-                        <svg class="footer__github--svg float-start "
+                        <svg class="footer__github--svg float-start svg-icon"
                              xmlns="http://www.w3.org/2000/svg"
                              viewBox="0 0 32 32">
                             <g id="Layer_2"
@@ -271,7 +274,7 @@
                     <div class="col footer__back-btn">
                         <?xml version="1.0" encoding="utf-8"?>
                         <svg version="1.1"
-                             class="footer__back-btn--svg float-end hidden"
+                             class="footer__back-btn--svg svg-icon float-end hidden"
                              id="Layer_1"
                              xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink"

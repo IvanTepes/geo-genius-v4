@@ -77,7 +77,8 @@ startGameBtn.addEventListener('click', () => {
             }, 350);
 
             // Start game timer
-            startTimer(gameTimerLabel, 30, 'gameTime');
+            startTimer(gameTimerLabel, gameData.gameTime, 'gameTime');
+            // startTimer(gameTimerLabel, 2, 'gameTime');
 
             // Set the game question
             setGameQuestion();
@@ -133,8 +134,7 @@ resetGameBtn.addEventListener('click', () => {
 
     generateQuestion();
 
-    // startTimer(gameTimerLabel, gameData.gameTime, 'gameTime');
-    startTimer(gameTimerLabel, 30, 'gameTime');
+    startTimer(gameTimerLabel, gameData.gameTime, 'gameTime');
 
     // Hide end game statistics if visible
     if (appEndGameStatistic.classList.contains('visible')) {

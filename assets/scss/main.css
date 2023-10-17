@@ -36,6 +36,9 @@ h1 {
 }
 @media (max-width: 320px) {
   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  .header {
+    background-color: yellow;
+  }
   .wrapper__header {
     height: 7svh;
     display: flex;
@@ -105,6 +108,9 @@ h1 {
 }
 @media (min-width: 321px) {
   /* smartphones, Android phones, landscape iPhone */
+  .header {
+    background-color: blue;
+  }
   .wrapper__header {
     height: 8svh;
     display: flex;
@@ -183,6 +189,9 @@ h1 {
   }
 }
 @media (min-width: 321px) and (orientation: landscape) {
+  .header {
+    background-color: green;
+  }
   .wrapper__header {
     height: 11svh;
     display: flex;
@@ -210,6 +219,9 @@ h1 {
   }
 }
 @media (min-width: 480px) {
+  .header {
+    background-color: red;
+  }
   .wrapper__header {
     height: 9svh;
     display: flex;
@@ -239,6 +251,9 @@ h1 {
   }
 }
 @media (min-width: 480px) and (orientation: landscape) {
+  .header {
+    background-color: purple;
+  }
   .wrapper__header {
     height: 13svh;
     display: flex;
@@ -267,6 +282,9 @@ h1 {
 }
 @media (min-width: 600px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .header {
+    background-color: pink;
+  }
   .wrapper__header {
     height: 10svh;
     display: flex;
@@ -330,6 +348,9 @@ h1 {
   }
 }
 @media (min-width: 600px) and (orientation: landscape) {
+  .header {
+    background-color: lime;
+  }
   .wrapper__header {
     height: 13svh;
     display: flex;
@@ -358,6 +379,9 @@ h1 {
 }
 @media (min-width: 801px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .header {
+    background-color: white;
+  }
   .wrapper__header {
     height: 11svh;
     display: flex;

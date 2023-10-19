@@ -193,3 +193,21 @@ function clearAnswer() {
         element.classList.remove('game__answer-btn--selected', 'game__answer--correct', 'game__answer--incorrect');
     });
 }
+
+const wrapperTitle = document.querySelector('.wrapper__title');
+const screenWidth = window.innerWidth;
+const screenHeight = window.innerHeight;
+wrapperTitle.textContent = `${screenWidth} x ${screenHeight}`;
+
+// console.log(`Width: ${screenWidth}, Height: ${screenHeight}`);
+
+function displayInitialSize() {}
+
+function updateScreenInfo() {
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+    wrapperTitle.textContent = `${screenWidth} x ${screenHeight}`;
+}
+
+window.addEventListener('resize', updateScreenInfo);
+// window.addEventListener('load', updateScreenInfo);

@@ -545,7 +545,7 @@
     }
 
     .wrapper__header {
-        height: 11svh;
+        height: 14svh;
         display: flex;
     }
 
@@ -567,19 +567,19 @@
     // }
 
     .svg-icon {
-        height: 2.5rem !important;
-        width: 2.5rem !important;
+        height: 2rem !important;
+        width: 2rem !important;
     }
 
-    // .category__title {
-    //     margin-bottom: 2rem !important;
-    // }
+    .category__title {
+        margin-bottom: 1rem !important;
+    }
 
     .category__title--label,
     .category__card-title,
     .game__question--label,
     .instruction__title {
-        font-size: 1.7rem;
+        font-size: 1.2rem;
     }
 
     .card-img-top {

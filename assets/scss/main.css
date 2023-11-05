@@ -383,7 +383,7 @@ h1 {
     background-color: white;
   }
   .wrapper__header {
-    height: 11svh;
+    height: 14svh;
     display: flex;
   }
   .wrapper__title {
@@ -397,14 +397,17 @@ h1 {
     display: flex;
   }
   .svg-icon {
-    height: 2.5rem !important;
-    width: 2.5rem !important;
+    height: 2rem !important;
+    width: 2rem !important;
+  }
+  .category__title {
+    margin-bottom: 1rem !important;
   }
   .category__title--label,
   .category__card-title,
   .game__question--label,
   .instruction__title {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
   .card-img-top {
     width: 80%;
@@ -905,6 +908,7 @@ html[data-theme=light] {
 }
 
 .game__answer-btn {
+  height: 2rem;
   background: var(--theme__color--primary);
   color: var(--theme__color--text);
   font-weight: bold;

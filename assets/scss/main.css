@@ -141,7 +141,7 @@ h1 {
     font-size: 1rem;
   }
   .card-img-top {
-    width: 75%;
+    width: 60%;
   }
   .category__card {
     display: flex;
@@ -247,7 +247,7 @@ h1 {
     font-size: 1.1rem;
   }
   .card-img-top {
-    width: 60%;
+    width: 50%;
   }
 }
 @media (min-width: 480px) and (orientation: landscape) {
@@ -310,7 +310,7 @@ h1 {
     font-size: 1.3rem;
   }
   .card-img-top {
-    width: 60%;
+    width: 45%;
   }
   .instruction__label {
     font-size: 1rem;

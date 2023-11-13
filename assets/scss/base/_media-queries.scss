@@ -577,13 +577,20 @@
 
     .category__title--label,
     .category__card-title,
-    .game__question--label,
     .instruction__title {
         font-size: 1.2rem;
     }
 
+    .game__question--label {
+        font-size: 1rem;
+    }
+
     .card-img-top {
         width: 80%;
+    }
+
+    .game__flag--img {
+        width: 15% !important;
     }
 
     // .category__card {
@@ -605,7 +612,7 @@
     .game__time::before,
     .game__score::before,
     .game__highscore::before {
-        font-size: 1.4rem;
+        font-size: 0.7rem;
     }
 
     .game__answer-btn {
@@ -620,17 +627,17 @@
     }
 
     .end-game__statistic-title {
-        font-size: 1.7rem;
+        font-size: 1.2rem;
     }
 
     .end-game__score--label-text {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     .end-game__score--label-value {
-        font-size: 3.7rem;
+        font-size: 2.5rem;
     }
 
     .end-game__statistic-table {
-        font-size: 1.3rem;
+        font-size: 0.7rem;
     }
 }

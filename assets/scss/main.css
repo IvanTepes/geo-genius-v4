@@ -405,12 +405,17 @@ h1 {
   }
   .category__title--label,
   .category__card-title,
-  .game__question--label,
   .instruction__title {
     font-size: 1.2rem;
   }
+  .game__question--label {
+    font-size: 1rem;
+  }
   .card-img-top {
     width: 80%;
+  }
+  .game__flag--img {
+    width: 15% !important;
   }
   .instruction__label {
     font-size: 1.3rem;
@@ -424,7 +429,7 @@ h1 {
   .game__time::before,
   .game__score::before,
   .game__highscore::before {
-    font-size: 1.4rem;
+    font-size: 0.7rem;
   }
   .game__answer-btn {
     width: 10rem;
@@ -436,16 +441,16 @@ h1 {
     width: 10rem;
   }
   .end-game__statistic-title {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
   .end-game__score--label-text {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   .end-game__score--label-value {
-    font-size: 3.7rem;
+    font-size: 2.5rem;
   }
   .end-game__statistic-table {
-    font-size: 1.3rem;
+    font-size: 0.7rem;
   }
 }
 h1 {
@@ -908,7 +913,7 @@ html[data-theme=light] {
 }
 
 .game__answer-btn {
-  height: 2rem;
+  height: 1.7rem;
   background: var(--theme__color--primary);
   color: var(--theme__color--text);
   font-weight: bold;
@@ -931,7 +936,14 @@ html[data-theme=light] {
   transition: all 0.5s ease;
 }
 
-.btn__next-question {
+.btn__next-question:hover {
+  background-color: #44cc77;
+  box-shadow: inset 1px 1px 5px 0px #121212;
+  color: #121212;
+  font-weight: bolder;
+  border: 1.5px solid var(--theme__color--border);
+}
+.btn__next-question.pressed {
   background-color: var(--theme__color--success);
   font-family: "Alegreya Sans SC", sans-serif;
   letter-spacing: 1.5px;
@@ -942,14 +954,7 @@ html[data-theme=light] {
   border: 1.5px solid var(--theme__color--border);
   box-shadow: 1px 1px 5px 0px var(--theme__color--shadow);
   color: #121212;
-}
-.btn__next-question:hover {
-  background-color: #44cc77;
-  box-shadow: inset 1px 1px 5px 0px #121212;
-  color: #121212;
-  font-weight: bolder;
-  border: 1.5px solid var(--theme__color--border);
-  transition: all 0.5s ease;
+  transition: all 0.5s ease; /* Add a transition for smooth animation */
 }
 
 .reset-modal,

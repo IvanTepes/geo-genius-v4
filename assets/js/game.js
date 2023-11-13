@@ -211,3 +211,13 @@ function updateScreenInfo() {
 
 window.addEventListener('resize', updateScreenInfo);
 // window.addEventListener('load', updateScreenInfo);
+
+const button = document.querySelector('.btn__next-question');
+
+button.addEventListener('click', () => {
+    button.classList.add('pressed'); // Apply the 'pressed' class
+    // Use setTimeout or other methods to remove the 'pressed' class after a delay
+    setTimeout(() => {
+        button.classList.remove('pressed');
+    }, 500);
+});

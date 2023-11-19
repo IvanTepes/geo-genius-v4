@@ -536,6 +536,21 @@
         height: 1.5rem;
         border: 1.5px solid var(--theme__color--border) !important;
     }
+
+    .end-game__statistic-title {
+        font-size: 1.2rem;
+    }
+
+    .end-game__score--label-text {
+        font-size: 1.2rem;
+    }
+    .end-game__score--label-value {
+        font-size: 2.5rem;
+    }
+
+    .end-game__statistic-table {
+        font-size: 0.7rem;
+    }
 }
 
 @media (min-width: 801px) {
@@ -631,7 +646,7 @@
     }
 
     .end-game__score--label-text {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
     }
     .end-game__score--label-value {
         font-size: 2.5rem;
